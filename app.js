@@ -8,6 +8,36 @@
   const reqRow = document.getElementById('reqRow');
   const selReq = document.getElementById('selReq');
   const toast = document.getElementById('toast');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuBackdrop = document.getElementById('menuBackdrop');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuClose = document.querySelector('.menu-close');
+
+  function closeMenu() {
+    document.body.classList.remove('menu-open');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function () {
+      const isOpen = document.body.classList.toggle('menu-open');
+      this.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+
+  if (menuBackdrop) {
+    menuBackdrop.addEventListener('click', closeMenu);
+  }
+
+  if (menuClose) {
+    menuClose.addEventListener('click', closeMenu);
+  }
+
+  document.querySelectorAll('.mobile-nav a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
 
   /* --- Open Modal --- */
   document.querySelectorAll('.open-modal').forEach(function (el) {
