@@ -697,6 +697,10 @@ body.menu-open .mobile-menu{transform:translateX(0)}
 /* ============================================================
    MOBILE SMALL (≤480px)
    ============================================================ */
+@media(max-width:768px){
+  .price-ribbon{display:none !important}
+}
+
 @media(max-width:480px){
   .loc-bar{padding:10px 12px}
   .loc-inner{flex-direction:column;align-items:stretch}
@@ -729,7 +733,6 @@ body.menu-open .mobile-menu{transform:translateX(0)}
   .usp-dot svg{width:10px;height:10px}
   .usp span{font-size:8.2px;line-height:1.2}
   .btn-primary{font-size:10.5px;padding:8px 14px}
-  .price-ribbon{display:none}
   
   .pkg-scroll{gap:12px;padding-bottom:6px}
   .pkg-card{min-width:80vw;max-width:80vw;flex-basis:80vw}
