@@ -1005,8 +1005,25 @@ body.menu-open .mobile-menu{transform:translateX(0)}
 .footer-brand h3{color:#fff;font-size:17px;letter-spacing:.5px;margin-bottom:2px}
 .footer-tag{color:var(--orange);font-size:10px;font-weight:800;letter-spacing:1.2px}
 .footer-brand p{font-size:12px;line-height:1.65;margin-top:10px;color:#b7b7b7;max-width:330px}
-.footer-logo{width:54px;height:54px;border-radius:12px;overflow:hidden;background:rgba(255,255,255,.08);margin-bottom:12px;display:flex;align-items:center;justify-content:center}
-.footer-logo img{width:100%;height:100%;object-fit:contain}
+.footer-logo{
+  width: auto;
+  max-width: 165px;
+  height: 38px;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 4px 12px;
+  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.footer-logo .logo-exact-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 .footer-col h4{color:#fff;font-size:13px;margin-bottom:12px}
 .footer-col a{
   display:block;
