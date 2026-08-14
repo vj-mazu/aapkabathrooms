@@ -81,7 +81,7 @@ ul{list-style:none}
 }
 .hdr-btn:active{background:var(--orange-soft)}
 
-/* Logo using exact original image */
+/* Logo using exact SVG vector */
 .logo {
   display: flex;
   flex-direction: column;
@@ -90,24 +90,21 @@ ul{list-style:none}
   text-decoration: none;
   min-width: 0;
 }
-.logo-exact-crop {
-  height: 32px;
-  width: 142px;
-  overflow: hidden;
+.logo-exact-svg-wrap {
+  width: 175px;
+  height: 38px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: #ffffff;
+  justify-content: flex-start;
 }
-.logo-original-img {
-  width: 180px;
-  height: auto;
+.logo-exact-svg {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  margin-top: -2px;
-  pointer-events: none;
+  display: block;
 }
 .logo-sub {
-  font-size: 7px;
+  font-size: 7.5px;
   font-weight: 800;
   color: #64748b;
   letter-spacing: 0.8px;
@@ -1332,16 +1329,12 @@ body.menu-open .mobile-menu{transform:translateX(0)}
     min-width: 0 !important;
     text-decoration: none !important;
   }
-  .logo-exact-crop {
-    height: 24px !important;
-    width: 112px !important;
-  }
-  .logo-original-img {
-    width: 142px !important;
-    margin-top: -1px !important;
+  .logo-exact-svg-wrap {
+    width: 125px !important;
+    height: 28px !important;
   }
   .logo-sub {
-    font-size: 5.2px !important;
+    font-size: 5.5px !important;
     letter-spacing: 0.5px !important;
     margin-top: 0 !important;
     margin-left: 1px !important;
