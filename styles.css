@@ -828,13 +828,14 @@ body.menu-open .mobile-menu{transform:translateX(0)}
 .cta-book,.cta-call{
   border-radius:999px;padding:11px 22px;
   font-size:12.5px;font-weight:900;
-  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
   white-space:nowrap;transition:var(--transition);
 }
 .cta-book{background:#fff;color:var(--orange)}
+.cta-book svg{display:block;width:16px;height:16px;flex-shrink:0;color:var(--orange)}
 .cta-book:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.18)}
 .cta-call{background:#fff;color:var(--orange-dark)}
-.cta-call svg{color:var(--orange)}
+.cta-call svg{display:block;width:14px;height:14px;flex-shrink:0;color:var(--orange)}
 .cta-call:hover{transform:translateY(-2px)}
 
 /* ============================================================
@@ -1230,10 +1231,6 @@ body.menu-open .mobile-menu{transform:translateX(0)}
   .hfs-info span{font-size:11px}
   .hfs-stars{font-size:10px}
   .hero-image-wrap{aspect-ratio:4/4.35;border-radius:24px}
-  .hero-exp-badge{width:78px;height:78px;top:18px;right:18px}
-  .heb-num{font-size:20px}
-  .heb-yrs{font-size:9px}
-  .heb-lbl{font-size:7px}
   .hero-trust-pill{padding:7px 12px;bottom:18px;right:18px}
   .htp-txt strong{font-size:10.5px}
   .htp-txt small{font-size:8.5px}
@@ -1299,29 +1296,29 @@ body.menu-open .mobile-menu{transform:translateX(0)}
    side-by-side like the blueprint
    ============================================================ */
 @media (max-width: 767px){
-  /* Header mobile adjustments */
+  /* Header mobile adjustments - logo + Call Us + Book Now with subtle gap */
   .header-inner {
-    padding: 8px 10px !important;
-    gap: 6px !important;
+    padding: 7px 10px !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
+    gap: 8px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
   .header-left {
     display: flex !important;
     align-items: center !important;
-    gap: 6px !important;
+    gap: 5px !important;
     min-width: 0 !important;
-    flex: 1 1 auto !important;
+    flex: 0 0 auto !important;
   }
   .menu-toggle {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 24px !important;
-    height: 24px !important;
+    width: 22px !important;
+    height: 22px !important;
     background: transparent !important;
     border: none !important;
     color: var(--orange) !important;
@@ -1329,47 +1326,48 @@ body.menu-open .mobile-menu{transform:translateX(0)}
     flex-shrink: 0 !important;
   }
   .menu-toggle svg {
-    width: 20px !important;
-    height: 20px !important;
+    width: 19px !important;
+    height: 19px !important;
     stroke: var(--orange) !important;
   }
   .logo {
     display: flex !important;
-    align-items: center !important;
-    gap: 5px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
     min-width: 0 !important;
     text-decoration: none !important;
   }
   .logo-exact-svg-wrap {
-    width: 108px !important;
-    height: 24px !important;
+    width: 124px !important;
+    height: 28px !important;
   }
   .logo-sub {
-    font-size: 5px !important;
-    letter-spacing: 0.4px !important;
-    margin-top: 0 !important;
-    margin-left: 1px !important;
+    font-size: 5.5px !important;
+    letter-spacing: 0.5px !important;
+    margin-top: 1px !important;
+    margin-left: 2px !important;
   }
   .header-actions {
     display: flex !important;
     align-items: center !important;
     gap: 5px !important;
-    flex-shrink: 0 !important;
+    flex: 0 0 auto !important;
   }
   .call-pill {
-    padding: 3.5px 8px 3.5px 4px !important;
+    padding: 3px 6px 3px 3px !important;
     border-radius: 999px !important;
     background: #fff !important;
     border: 1.5px solid var(--orange) !important;
-    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.1) !important;
-    gap: 4px !important;
+    box-shadow: 0 2px 6px rgba(249, 115, 22, 0.12) !important;
+    gap: 3px !important;
     text-decoration: none !important;
     flex-shrink: 0 !important;
     animation: callVibrate 1.8s ease-in-out infinite !important;
   }
   .call-pill-icon {
-    width: 20px !important;
-    height: 20px !important;
+    width: 18px !important;
+    height: 18px !important;
     background: var(--orange) !important;
     color: #fff !important;
     border-radius: 50% !important;
@@ -1381,18 +1379,12 @@ body.menu-open .mobile-menu{transform:translateX(0)}
     flex-shrink: 0 !important;
   }
   .call-pill-icon svg {
-    width: 10px !important;
-    height: 10px !important;
+    width: 9px !important;
+    height: 9px !important;
     animation: callWobble 1.8s ease-in-out infinite !important;
   }
   .call-pill-icon::after {
-    content: '' !important;
-    position: absolute !important;
-    inset: -3px !important;
-    border-radius: 50% !important;
-    border: 1.5px solid var(--orange) !important;
-    animation: callRing 1.5s ease-out infinite !important;
-    display: block !important;
+    display: none !important;
   }
   .call-pill-txt {
     line-height: 1 !important;
@@ -1401,24 +1393,29 @@ body.menu-open .mobile-menu{transform:translateX(0)}
   }
   .call-pill-txt small {
     display: block !important;
-    font-size: 5.5px !important;
+    font-size: 5px !important;
     color: #475569 !important;
     font-weight: 700 !important;
     margin-bottom: 1px !important;
   }
   .call-pill-txt strong {
-    font-size: 9px !important;
+    font-size: 7.6px !important;
     color: #ea580c !important;
     font-weight: 900 !important;
     white-space: nowrap !important;
   }
+  .hdr-more-dots {
+    display: none !important;
+  }
   .nav-book-btn {
     display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     background: var(--orange) !important;
     color: #fff !important;
     border-radius: 999px !important;
-    padding: 5px 10px !important;
-    font-size: 10px !important;
+    padding: 4px 8px !important;
+    font-size: 8.5px !important;
     font-weight: 800 !important;
     border: none !important;
     box-shadow: 0 2px 8px rgba(249, 115, 22, 0.25) !important;

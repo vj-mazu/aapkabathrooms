@@ -5,8 +5,6 @@
   'use strict';
 
   const modal = document.getElementById('modal');
-  const reqRow = document.getElementById('reqRow');
-  const selReq = document.getElementById('selReq');
   const toast = document.getElementById('toast');
   const menuToggle = document.querySelector('.menu-toggle');
   const menuBackdrop = document.getElementById('menuBackdrop');
