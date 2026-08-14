@@ -691,21 +691,24 @@ body.menu-open .mobile-menu{transform:translateX(0)}
 
 .svc-card{
   position:relative;
-  border-radius:14px;
+  border-radius:16px;
   overflow:hidden;
-  border:2px solid transparent;
+  border:1.5px solid rgba(249, 115, 22, 0.3);
+  outline: 1px solid rgba(249, 115, 22, 0.12);
+  outline-offset: -3px;
   cursor:pointer;
   display:flex;
   flex-direction:column;
-  box-shadow:var(--shadow-card);
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
   padding:0;
-  background:linear-gradient(#fff, #fff) padding-box, linear-gradient(135deg, #e2e8f0, #f1f5f9) border-box;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background:#ffffff;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .svc-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 15px 30px rgba(249, 115, 22, 0.12);
-  background:linear-gradient(#fff, #fff) padding-box, linear-gradient(135deg, var(--orange), #fcd3b8) border-box;
+  transform:translateY(-5px);
+  border-color: var(--orange);
+  outline-color: rgba(249, 115, 22, 0.35);
+  box-shadow: 0 14px 32px rgba(249, 115, 22, 0.22);
 }
 
 .svc-card img {
@@ -714,7 +717,7 @@ body.menu-open .mobile-menu{transform:translateX(0)}
   display: block;
   transition: transform .4s ease;
 }
-.svc-card:hover img{transform:scale(1.04)}
+.svc-card:hover img{transform:scale(1.03)}
 
 
 
