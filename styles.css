@@ -537,40 +537,22 @@ body.menu-open .mobile-menu{transform:translateX(0)}
 /* Top-Right 15 Years Experience Luxury Sticker Badge */
 .hero-exp-badge.sticker-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   z-index: 10;
-  width: 76px;
+  width: 78px;
+  height: 78px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   pointer-events: none;
   filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
 }
 .badge-img-sticker {
-  width: 72px;
-  height: 72px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  border-radius: 50%;
   display: block;
-}
-.badge-exp-text {
-  font-family: 'Outfit', sans-serif;
-  font-size: 8.5px;
-  font-weight: 900;
-  color: #facc15;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: -6px;
-  background: rgba(8, 12, 20, 0.85);
-  backdrop-filter: blur(4px);
-  border: 1px solid #facc15;
-  padding: 1.5px 7px;
-  border-radius: 999px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  white-space: nowrap;
 }
 
 /* Bottom-Right Bangalore's Trusted Experts Pill */
@@ -626,30 +608,6 @@ body.menu-open .mobile-menu{transform:translateX(0)}
 }
 .hero-shade {
   display: none;
-}
-
-/* Badge pill overlaid on the hero image (e.g. “12 DAYS COMPLETION”) */
-.hero-badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  z-index: 4;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: var(--orange);
-  color: #fff;
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: .4px;
-  padding: 5px 9px;
-  border-radius: 99px;
-  box-shadow: 0 3px 10px rgba(0,0,0,.3);
-  pointer-events: none;
-  text-transform: uppercase;
-}
-.hero-badge svg {
-  flex-shrink: 0;
 }
 
 .hero-image-wrap .dots-container {
@@ -1493,21 +1451,16 @@ body.menu-open .mobile-menu{transform:translateX(0)}
     height: 10px !important;
   }
 
-  /* Hero badges on mobile - 50% reduced size */
+  /* Hero badges on mobile - 50% scale */
   .hero-exp-badge.sticker-badge {
-    width: 28px !important;
-    top: 5px !important;
-    right: 5px !important;
+    width: 38px !important;
+    height: 38px !important;
+    top: 6px !important;
+    right: 6px !important;
   }
   .badge-img-sticker {
-    width: 26px !important;
-    height: 26px !important;
-  }
-  .badge-exp-text {
-    font-size: 4.2px !important;
-    padding: 0.5px 3px !important;
-    margin-top: -3px !important;
-    letter-spacing: 0.4px !important;
+    width: 100% !important;
+    height: 100% !important;
   }
   .bnav-whatsapp {
     color: #25D366 !important;
@@ -1732,7 +1685,6 @@ body.menu-open .mobile-menu{transform:translateX(0)}
   .call-pill{padding:4px 10px 4px 5px}
   .call-pill-icon{width:28px;height:28px}
   .call-pill-txt strong{font-size:11.5px}
-  .dots-btn{width:34px;height:34px}
   .value-item span{font-size:9.5px}
   .value-icon svg{width:23px;height:23px}
 }
